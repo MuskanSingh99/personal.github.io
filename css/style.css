@@ -327,24 +327,24 @@ section {
   line-height: 2;
 }
 
-.skill .box-container {
+.competency .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
 }
 
-.skill .box-container .box {
+.competency .box-container .box {
   padding: 3rem 2rem;
   border: var(--border-light);
 }
 
-.skill .box-container .box i {
+.competency .box-container .box i {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
-.skill .box-container .box h3 {
+.competency .box-container .box h3 {
   margin: 1rem 0;
   font-size: 2rem;
   padding: 1.5rem;
@@ -352,20 +352,20 @@ section {
   font-weight: normal;
 }
 
-.skill .box-container .box p {
+.competency .box-container .box p {
   line-height: 2;
   font-size: 1.7rem;
 }
 
-.skill .box-container .box:hover {
+.competency .box-container .box:hover {
   background-color: var(--black);
 }
 
-.skill .box-container .box:hover i {
+.competency .box-container .box:hover i {
   color: var(--white);
 }
 
-.skill .box-container .box:hover p {
+.competency .box-container .box:hover p {
   color: var(--white);
 }
 
