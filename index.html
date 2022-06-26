@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <!-- aos css link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <?php
+
+if(isset($message)){
+   foreach($message as $message){
+      echo '
+      <div class="message" data-aos="zoom-out">
+         <span>'.$message.'</span>
+         <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+      </div>
+      ';
+   }
+}
+
+?>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#home" class="logo">Project</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about">about</a>
+            <a href="#skill">skill</a>
+            <a href="#project">project</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="follow">
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/muskan-singh-1900681b3/" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="image" data-aos="fade-right">
+            <img src="images/user-image.JPG" alt="muskan's image">
+        </div>
+
+        <div class="content">
+            <h3 data-aos="fade-up">Hi, i am Muskan singh</h3>
+            <span data-aos="fade-up">web designer & developer</span>
+            <p data-aos="fade-up">I have a keen interest in Development and Designing.
+                I have a bachelor's degree in Computer Application with concentrations in Data analytics. I'm
+                comfortable with back-end and front-end languages for websites and applications, creating relational
+                schemas, implementing them, and doing general database-related work.
+                In addition, I am good at time management and multitasking, and willing to learn.</p>
+            <a data-aos="fade-up" href="#about" class="btn">about me</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading" data-aos="fade-up"> <span>biography</span> </h1>
+
+        <div class="biography">
+
+            <p data-aos="fade-up"></p>
+
+            <div class="bio">
+                <h3 data-aos="zoom-in"> <span>name : </span> Muskan singh </h3>
+                <h3 data-aos="zoom-in"> <span>email : </span> muskan.s1802@gmail.com </h3>
+                <h3 data-aos="zoom-in"> <span>address : </span> Roorkee, india </h3>
+                <h3 data-aos="zoom-in"> <span>phone : </span> 7409799777 </h3>
+                <h3 data-aos="zoom-in"> <span>age : </span> 22 years </h3>
+                <h3 data-aos="zoom-in"> <span>experience : </span> Fresher </h3>
+            </div>
+
+            <a href="data/Muskan's Resume.pdf" class="btn" data-aos="fade-up" download="Muskan_Resume">download
+                Resume</a>
+
+        </div>
+
+        <div class="skills" data-aos="fade-up">
+
+            <h1 class="heading"> <span>skills</span> </h1>
+
+            <div class="progress">
+                <div class="bar" data-aos="fade-left">
+                    <h3><span>HTML</span> <span>95%</span></h3>
+                </div>
+                <div class="bar" data-aos="fade-right">
+                    <h3><span>CSS</span> <span>80%</span></h3>
+                </div>
+                <div class="bar" data-aos="fade-left">
+                    <h3><span>JavaScript</span> <span>65%</span></h3>
+                </div>
+                <div class="bar" data-aos="fade-right">
+                    <h3><span>PHP</span> <span>80%</span></h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="edu-exp">
+
+            <h1 class="heading" data-aos="fade-up"> <span>education & experience</span> </h1>
+
+            <div class="row">
+
+                <div class="box-container">
+
+                    <h3 class="title" data-aos="fade-right">education</h3>
+
+                    <div class="box" data-aos="fade-right">
+                        <span>( 2021 - 2023 )</span>
+                        <h3>Master's in Computer Application</h3>
+                        <p>Chandigarh university,India</p>
+                    </div>
+
+                    <div class="box" data-aos="fade-right">
+                        <span>( 2019 - 2021 )</span>
+                        <h3>Data analytics</h3>
+                        <p>Quantum university,India</p>
+                    </div>
+
+                    <div class="box" data-aos="fade-right">
+                        <span>( 2018 - 2021 )</span>
+                        <h3>Bachelor's in Computer Application</h3>
+                        <p>Quantum University,India</p>
+                    </div>
+
+                </div>
+
+                <div class="box-container">
+
+                    <h3 class="title" data-aos="fade-left">experience</h3>
+
+                    <div class="box" data-aos="fade-left">
+                        <span>( 2021 - 2021 )</span>
+                        <h3>front-end developer intern</h3>
+                        <p>I was working as a frontened developer in which i was working on a ecommerce website.and
+                            design the web application and made changes with the features.
+                            I was assigned in the developer team and learned new skills in testing the website with that
+                            i also worked with management department.
+                        </p>
+                    </div>
+
+                    <div class="box" data-aos="fade-left">
+                        <span>( 2019 - present)</span>
+                        <h3>Google Developer Group</h3>
+                        <p>I am a member of google developer group and work in organising bootcamp and conferences.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="skill" id="skill">
+
+        <h1 class="heading" data-aos="fade-up"> <span>skill</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-code"></i>
+                <h3>web development</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-paint-brush"></i>
+                <h3>graphic design</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fab fa-bootstrap"></i>
+                <h3>bootstrap</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-chart-line"></i>
+                <h3>seo marketing</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-bullhorn"></i>
+                <h3>digital marketing</h3>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fab fa-wordpress"></i>
+                <h3>wordpress</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="project" id="project">
+
+        <h1 class="heading" data-aos="fade-up"> <span>project</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="zoom-in">
+                <img src="images/img-1.png" alt="">
+                <h3>Electron Screen recorder</h3>
+                <span>( 2021 - 2021 )</span>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <img src="images/img-2.png" alt="">
+                <h3>Online website</h3>
+                <span>( 2020 - 2022 )</span>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <img src="images/img-3.png" alt="">
+                <h3> Social-networking site </h3>
+                <span>( 2019 - 2019 )</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading" data-aos="fade-up"> <span>contact me</span> </h1>
+
+        <form action="" method="post">
+            <div class="flex">
+                <input data-aos="fade-right" type="text" name="name" placeholder="enter your name" class="box" required>
+                <input data-aos="fade-left" type="email" name="email" placeholder="enter your email" class="box"
+                    required>
+            </div>
+            <input data-aos="fade-up" type="number" min="0" name="number" placeholder="enter your number" class="box"
+                required>
+            <textarea data-aos="fade-up" name="message" class="box" required placeholder="enter your message" cols="30"
+                rows="10"></textarea>
+            <input type="submit" data-aos="zoom-in" value="send message" name="send" class="btn">
+        </form>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-phone"></i>
+                <h3>phone</h3>
+                <p>7409799777</p>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>muskan.s1802@gmail.com</p>
+            </div>
+
+            <div class="box" data-aos="zoom-in">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>address</h3>
+                <p>Roorkee, india - 247667</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <div class="credit"> &copy; copyright @
+        <?php echo date('Y') ;
+        ?>
+        by <span>Ms. Muskan singh</span>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <!-- aos js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 800,
+            delay: 300
+        });
+
+    </script>
+
+</body>
+
+</html>
